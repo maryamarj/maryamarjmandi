@@ -1,0 +1,92 @@
+.container {
+  z-index: -1;
+  margin-top: 5rem;
+  margin-bottom: 10rem;
+  display: flex;
+  column-gap: 3rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  margin-top: 10rem;
+  text-align: center;
+}
+
+.projects {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.projects:hover {
+  transform: scale(1.2);
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.p-name {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  bottom: 0;
+  background-color: rgb(20, 19, 19);
+  color: white;
+}
+
+.p-name button {
+  height: 4rem;
+  width: 100%;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  font-size: 1.7rem;
+  border: none;
+}
+
+.p-name button:hover {
+  color: darkgray;
+}
+
+.pro-img img {
+  width: 17rem;
+  height: 15rem;
+  transition: 0.5s;
+  object-fit: cover;
+}
+
+@media (max-width: 500px) {
+  .container {
+    display: block;
+  }
+
+  .projects {
+    margin-bottom: 10rem;
+  }
+
+  .p-name {
+    width: 270px;
+  }
+
+  .container {
+    margin-top: 14rem;
+    align-items: center;
+  }
+
+  .projects:hover {
+    transform: scale(0.8);
+    transition: 0.5s;
+    cursor: pointer;
+  }
+
+  .projects {
+    width: 175px;
+    margin-left: 5rem;
+  }
+
+  .title {
+    margin-top: 30rem;
+  }
+}

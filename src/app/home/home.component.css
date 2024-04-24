@@ -4,9 +4,10 @@
 
 .bg-img img {
   filter: brightness(0.4);
-  height: 100vh;
+  height: auto;
   width: 100vw;
   object-fit: cover;
+  margin-top: 8rem;
 }
 
 .bg-img h1 {
@@ -34,14 +35,14 @@
 }
 
 .about {
-  margin-top: 20rem;
+  margin-top: 10rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
 .profile-img {
-  width: 50wv;
+  width: 50vw;
 }
 
 .profile-img img {
@@ -51,10 +52,11 @@
   border-radius: 50%;
   margin-left: 10rem;
   margin-right: 3rem;
+  transition: 0.5s;
 }
 
 .description {
-  width: 50wv;
+  width: 50vw;
   text-overflow: ellipsis;
   margin-right: 2rem;
   display: flex;
@@ -78,7 +80,6 @@
 }
 
 .contact-me {
-  margin-top: 30rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -106,4 +107,56 @@
 
 .logo:hover {
   transform: scale(1.5);
+}
+
+#contact-me {
+  margin-bottom: 10rem;
+}
+
+@media (max-width: 600px) {
+  .about {
+    column-gap: 1rem;
+    display: block;
+  }
+  .profile-img img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    transition: 0.5s;
+    margin: 5px;
+  }
+
+  .description {
+    /* overflow: hidden; */
+    text-align: right;
+    /* width: 50px; */
+    /* height: 200px; */
+    text-overflow: ellipsis;
+  }
+
+  .link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .logo {
+    margin-left: 4px;
+  }
+}
+
+@media (max-width: 500px) {
+  .bg-img img {
+    margin-top: 23rem;
+  }
+  .bg-img h1 {
+    top: 65%;
+  }
+  .bg-img h3 {
+    top: 75%;
+  }
+
+  #contact-me {
+    margin-bottom: 23rem;
+  }
 }
