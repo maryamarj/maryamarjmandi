@@ -14,7 +14,7 @@ export const sampleProjects: Project[] = [
     projectName: 'Trussardi Shop',
   },
   {
-    projectImg: '../assets/projects/wonderland.png',
+    projectImg: '../assets/projects/wonderland.jpg',
     projectName: 'Wonderland',
   },
 ];

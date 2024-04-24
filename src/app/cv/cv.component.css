@@ -6,14 +6,18 @@
 }
 
 .container h2 {
-  margin-top: 15rem;
+  margin-top: 10rem;
+  width: 80vw;
+  margin-left: -10px;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
 }
 
 .btns {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 10rem;
 }
 
 .cv-btn {
@@ -46,6 +50,7 @@ p {
   .btns {
     display: block;
     margin-left: 5rem;
+    margin-top: 20rem;
   }
   .-cv {
     display: flex;
